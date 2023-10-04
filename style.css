@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 350px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+header{
+    background-color:rgb(23, 87, 206);
+    color: #fff;
+    padding: 30px 20px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+h2{
+    margin-bottom: 5px;
+}
+header input{
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    margin-top: 26px;
+    color: #fff;
+    width: 100%;
+}
+#users{
+    height: 400px;
+    overflow: auto;
+}
+.user{
+    padding: 20px;
+    display: flex;
+}
+.user:not(:last-of-type){
+    border-bottom: 1px #eee solid;
+}
+.user img{
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info h3{
+    font-size: 18px;
+}
+.info p{
+    font-size: 14px;
+}
+.loading{
+    text-align: center;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
